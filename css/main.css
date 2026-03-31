@@ -96,7 +96,8 @@ p {
 
 /* ================= IMAGENES ================= */
 img {
-  max-width: 300px;
+  max-width: 100%;  /* 🔥 ya no limita a 300px */
+  height: auto;
   margin: 20px 0;
   border-radius: 20px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -231,16 +232,9 @@ audio {
 }
 
 /* ================= BANNER ================= */
-.mi-imagen { 
-  width: 100%; 
-  height: 300%; 
-  object-fit: 
-  contain; 
-  display: 
-  block; 
-  margin: 
-  0 auto; 
-  border-radius: 0; 
-  box-shadow: none; 
-  text-align:center; 
+.mi-imagen {
+  width: 100%;
+  max-width: none;
+  height: 350px;     /* altura fija tipo banner */
+  object-fit: cover; /* recorte elegante */
 }
