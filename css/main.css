@@ -314,3 +314,8 @@ audio {
   flex: 1 1 45%; /* Que cada tabla ocupe hasta 45% del ancho disponible */
   min-width: 300px; /* Para que no se vuelvan demasiado pequeñas */
 }
+
+.mi-imagen {
+  width: 300px;
+  height: auto;
+}
