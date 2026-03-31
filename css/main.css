@@ -316,6 +316,7 @@ audio {
 }
 
 .mi-imagen {
-  width: 500px;
-  height: auto;
+  width: 100%;
+  height: 300px; /* ajustá este valor */
+  object-fit: cover;
 }
