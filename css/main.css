@@ -231,8 +231,4 @@ audio {
 }
 
 /* ================= BANNER ================= */
-.mi-imagen {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-}
+.mi-imagen { width: 100%; height: 300%; object-fit: contain; display: block; margin: 0 auto; border-radius: 0; box-shadow: none; text-align:center; }
