@@ -97,8 +97,8 @@ img {
 
 /* ================= BANNER ================= */
 .mi-imagen {
-  width: 80%;
-  height: auto;
+  width: 100%;
+  height: 300%;
   object-fit: contain;
   display: block;
   border-radius: 0;
