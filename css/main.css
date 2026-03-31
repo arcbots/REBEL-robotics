@@ -233,6 +233,7 @@ audio {
 /* ================= BANNER ================= */
 .mi-imagen {
   width: 100%;
+  max-width: none;
   height: 300px;
   object-fit: cover;
 }
