@@ -65,7 +65,7 @@ nav a:hover {
 }
 
 /* ================= BODY ================= */
-body {
+body, p {
   padding-top: 70px;
   margin: 0;
   font-family: Arial, sans-serif;
