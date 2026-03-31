@@ -225,9 +225,3 @@ audio {
 }
 
 /* ================= BANNER ================= */
-.mi-imagen {
-  width: 100%;
-  max-width: none;
-  height: 350px;     /* altura fija tipo banner */
-  object-fit: cover; /* recorte elegante */
-}
