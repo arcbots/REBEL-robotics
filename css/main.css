@@ -169,13 +169,18 @@ th, td {
 }
 
 
-/* ================= SLIDER ================= */
+/* ================= SLIDER (VERSIÓN ESTABLE) ================= */
 .slider-container {
-  width: 400px;
-  height: 300px;
+  width: 100%;
+  max-width: 600px; /* tamaño controlado */
+  aspect-ratio: 4 / 3; /* 🔥 equivalente a 400x300 */
   margin: 20px auto;
   overflow: hidden;
   position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .slider-track {
@@ -189,29 +194,33 @@ th, td {
   width: 100%;
   height: 100%;
   flex-shrink: 0;
+
+  display: flex;              /* 🔥 clave del viejo */
+  justify-content: center;
+  align-items: center;
 }
 
-/* 🔥 IMÁGENES AJUSTADAS */
+/* 🔥 IMAGEN PERFECTA (SIN RECORTE) */
 .slide img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* llena todo el contenedor */
-  object-position: center; /* centra la imagen */
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
   display: block;
 }
 
-/* ================= ANIMACIÓN ================= */
+/* ================= ANIMACIÓN ORIGINAL ================= */
 @keyframes autoSlide {
-  0%   { transform: translateX(0); }
-  30%  { transform: translateX(0); }
+  0%   { transform: translateX(0%); }
+  33%  { transform: translateX(0%); }
 
-  33%  { transform: translateX(-100%); }
-  63%  { transform: translateX(-100%); }
+  36%  { transform: translateX(-100%); }
+  66%  { transform: translateX(-100%); }
 
-  66%  { transform: translateX(-200%); }
-  96%  { transform: translateX(-200%); }
+  69%  { transform: translateX(-200%); }
+  99%  { transform: translateX(-200%); }
 
-  100% { transform: translateX(0); }
+  100% { transform: translateX(0%); }
 }
 
 /* ================= AUDIO ================= */
