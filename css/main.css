@@ -70,15 +70,9 @@ body {
   padding-top: 70px;
   margin: 0;
   font-family: 'Arial', sans-serif;
-  background: #ffffff; /* 🔥 fondo blanco */
-  color: #000000;      /* 🔥 letras negras */
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  align-items: center;
-  justify-content: center;
+  background: #ffffff;
+  color: #000000;
   text-align: center;
-  padding: 0px;
 }
 
 /* ================= TEXTOS ================= */
