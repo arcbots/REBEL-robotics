@@ -227,5 +227,72 @@ audio {
 }
 
 /* ================= BANNER ================= */
+/* ================= RESPONSIVE REAL ================= */
+@media (max-width: 768px) {
 
+  /* BODY */
+  body {
+    padding-top: 60px;
+    align-items: stretch;   /* 🔥 quita centrado raro */
+    justify-content: flex-start;
+  }
+
+  /* NAV */
+  nav {
+    padding: 10px;
+  }
+
+  nav ul {
+    text-align: center;
+  }
+
+  /* TEXTO */
+  h1 {
+    font-size: 1.8em; /* 🔥 más pequeño en celular */
+  }
+
+  p {
+    font-size: 1em;
+    padding: 0 15px;
+  }
+
+  /* BOTONES */
+  button {
+    width: 80%;
+    max-width: 300px;
+  }
+
+  /* GALERÍA */
+  .galeria {
+    grid-template-columns: 1fr; /* 🔥 una columna */
+    padding: 20px;
+  }
+
+  /* TABLAS */
+  table {
+    font-size: 0.9em;
+  }
+
+  th, td {
+    padding: 10px;
+  }
+
+  /* SLIDER */
+  .slider-container {
+    max-width: 100%;
+    aspect-ratio: 16 / 9;
+  }
+
+  /* TABLAS LADO A LADO */
+  .tablas-lado-a-lado {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  /* BANNER */
+  .mi-imagen {
+    width: 100%;
+    height: auto;
+  }
+}
 
