@@ -1,18 +1,18 @@
 nav {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: #007BFF; /* 🔵 menú azul */
   width: 100%;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 1000;
   padding: 10px 0;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
 
 nav .menu-toggle {
   display: none;
   font-size: 2em;
-  color: #00d9ff;
+  color: #ffffff;
   cursor: pointer;
   text-align: center;
 }
@@ -31,7 +31,7 @@ nav li {
 }
 
 nav a {
-  color: #00d9ff;
+  color: #ffffff; /* texto blanco */
   text-decoration: none;
   font-weight: bold;
   font-size: 1em;
@@ -39,7 +39,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #ffffff;
+  color: #dcdcdc;
 }
 
 /* Responsive */
@@ -47,7 +47,7 @@ nav a:hover {
   nav ul {
     display: none;
     flex-direction: column;
-    background-color: #000;
+    background-color: #007BFF;
     width: 100%;
     padding: 10px 0;
   }
@@ -65,27 +65,26 @@ nav a:hover {
   }
 }
 
-/* Ajuste del body */
+/* BODY */
 body {
   padding-top: 70px;
-/* Ajuste del body 70px */
   margin: 0;
   font-family: 'Arial', sans-serif;
-  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-  color: white;
+  background: #ffffff; /* fondo blanco */
+  color: #000; /* texto oscuro */
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 0px;
 }
 
+/* TITULOS */
 h1 {
   font-size: 3em;
   margin-bottom: 0.5em;
-  color: #00d9ff;
+  color: #007BFF;
 }
 
 p {
@@ -93,16 +92,29 @@ p {
   max-width: 800px;
 }
 
+/* 🔥 IMPORTANTE: quitar límite global de imágenes */
 img {
-  max-width: 300px;
+  max-width: 100%;
+  height: auto;
   margin: 20px 0;
   border-radius: 20px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
+/* 🔥 BANNER */
+.mi-imagen {
+  width: 100%;
+  max-width: none;
+  height: 400px;
+  object-fit: cover;
+  display: block;
+  border-radius: 0;
+}
+
+/* BOTONES */
 button {
-  background-color: #00d9ff;
-  color: #000;
+  background-color: #007BFF;
+  color: #fff;
   border: none;
   padding: 10px 20px;
   font-size: 1em;
@@ -113,15 +125,16 @@ button {
 }
 
 button:hover {
-  background-color: #00b8d4;
+  background-color: #0056b3;
 }
 
 footer {
   margin-top: auto;
   font-size: 0.8em;
-  color: #ccc;
+  color: #555;
 }
 
+/* GALERIA */
 .galeria {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -134,7 +147,7 @@ footer {
 .galeria img {
   width: 100%;
   border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
   transition: transform 0.3s ease;
 }
 
@@ -145,9 +158,11 @@ footer {
 .galeria-titulo {
   text-align: center;
   font-size: 2.5em;
-  color: #00d9ff;
+  color: #007BFF;
   margin-top: 100px;
 }
+
+/* TABLAS */
 .tabla-recursos {
   padding: 40px;
   max-width: 1000px;
@@ -157,37 +172,39 @@ footer {
 table {
   width: 100%;
   border-collapse: collapse;
-  background-color: #111;
-  color: #00d9ff;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.4);
-  border: 2px solid #00d9ff;
+  background-color: #f5f5f5;
+  color: #000;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+  border: 2px solid #007BFF;
   border-radius: 10px;
   overflow: hidden;
 }
 
 thead {
-  background-color: #00d9ff;
-  color: #000;
+  background-color: #007BFF;
+  color: #fff;
 }
 
 th, td {
   padding: 15px;
   text-align: left;
-  border: 1px solid #00d9ff;
+  border: 1px solid #007BFF;
 }
 
 tr:hover {
-  background-color: rgba(0, 217, 255, 0.1);
+  background-color: rgba(0, 123, 255, 0.1);
 }
 
 a {
-  color: #00d9ff;
+  color: #007BFF;
   text-decoration: underline;
 }
 
 a:hover {
-  color: #fff;
+  color: #000;
 }
+
+/* VIDEO */
 .video-container {
   display: flex;
   justify-content: center;
@@ -200,18 +217,10 @@ a:hover {
 .video-container iframe {
   max-width: 100%;
   border-radius: 10px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.4);
-}
-.descripcion-proyecto {
-  max-width: 900px;
-  margin: 40px auto;
-  font-size: 1.2em;
-  line-height: 1.6;
-  color: #fff;
-  padding: 0 20px;
-  text-align: justify;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
 }
 
+/* EQUIPO */
 .equipo {
   max-width: 1200px;
   margin: 60px auto;
@@ -221,7 +230,7 @@ a:hover {
 .equipo h2 {
   text-align: center;
   font-size: 2em;
-  color: #00d9ff;
+  color: #007BFF;
   margin-bottom: 40px;
 }
 
@@ -233,11 +242,11 @@ a:hover {
 }
 
 .miembro {
-  background-color: #1a1a1a;
+  background-color: #f5f5f5;
   border-radius: 12px;
   padding: 20px;
   text-align: center;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
 
 .miembro img {
@@ -245,80 +254,13 @@ a:hover {
   max-width: 180px;
   border-radius: 50%;
   margin-bottom: 15px;
-  border: 3px solid #00d9ff;
+  border: 3px solid #007BFF;
 }
 
 .miembro h3 {
-  color: #00d9ff;
-  margin-bottom: 10px;
+  color: #007BFF;
 }
 
 .miembro p {
-  color: #ddd;
-}
-.slider-container {
-  width: 100%;
-  max-width: 800px;
-  margin: 20px auto; /* ✅ Esto centra el slider horizontalmente */
-  overflow: hidden;
-  position: relative;
-  aspect-ratio: 16 / 9;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.slider-track {
-  display: flex;
-  width: 300%;
-  animation: autoSlide 9s infinite;
-}
-
-.slide {
-  width: 100%;
-  flex-shrink: 0;
-}
-
-.slide img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-/* Animación automática */
-@keyframes autoSlide {
-  0%   { transform: translateX(0%); }
-  33%  { transform: translateX(0%); }
-  36%  { transform: translateX(-100%); }
-  66%  { transform: translateX(-100%); }
-  69%  { transform: translateX(-200%); }
-  99%  { transform: translateX(-200%); }
-  100% { transform: translateX(0%); }
-}
-audio {
-  display: block;
-  margin: 20px auto;
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 10px;
-  padding: 10px;
-}
-.tablas-lado-a-lado {
-  display: flex;
-  gap: 40px; /* Espacio entre las tablas */
-  justify-content: center;
-  flex-wrap: wrap; /* Que bajen si no caben en pantallas pequeñas */
-}
-
-.tablas-lado-a-lado .tabla-recursos {
-  flex: 1 1 45%; /* Que cada tabla ocupe hasta 45% del ancho disponible */
-  min-width: 300px; /* Para que no se vuelvan demasiado pequeñas */
-}
-
-.mi-imagen {
-  width: 100%;
-  max-width: none;
-  height: 400px;
-  object-fit: cover;
-  display: block;
+  color: #333;
 }
