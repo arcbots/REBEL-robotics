@@ -177,7 +177,7 @@ th, td {
 
 .slider-track {
   display: flex;
-  width: 300%;
+  width: auto;
   animation: autoSlide 9s infinite;
 }
 
