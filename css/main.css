@@ -88,7 +88,8 @@ p {
   font-size: 1.2em;
   max-width: 800px;
   color: #000;
-  text-align:center;
+  margin: 0 auto;
+  text-align: center; /* 🔥 centra el texto */
 }
 
 /* ================= IMÁGENES ================= */
