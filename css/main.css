@@ -237,3 +237,8 @@ audio {
   object-fit: cover;
   object-position: center;
 }
+main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
