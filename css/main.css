@@ -230,8 +230,8 @@ audio {
 /* ================= BANNER ================= */
 .mi-imagen {
   width: 100%;
-  height: 300px;          /* 🔥 altura controlada */
-  object-fit: cover;      /* 🔥 llena todo el ancho */
+  height: auto;          /* 🔥 altura controlada */
+  object-fit: contain;      /* 🔥 llena todo el ancho */
   display: block;
   margin: 0;
   border-radius: 0;
